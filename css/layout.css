@@ -1220,6 +1220,7 @@ header .corpname {
   width: 102%;
   height: 100%;
   overflow: auto;
+  padding-bottom: 100px;
 }
 
 .report-panel .report-title {
