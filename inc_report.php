@@ -311,6 +311,10 @@
 						</tr>
 					</table>
 				</div>
+				<div class="btn-group">
+					<button><span class="icon"></span>Export PDF</button>
+					<button><span class="icon"></span>Print Report</button>
+				</div>
 			</div>
 		</div>
 	</div>
