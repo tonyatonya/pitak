@@ -101,6 +101,36 @@ body {
   left: 67%;
 }
 
+.bottom.building {
+  height: 35%;
+}
+
+.bottom.building .left-section {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  border-right: 1px solid #00427e;
+}
+
+.bottom.building .left-section .content-frame {
+  height: 78%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bottom.building .right-section {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  left: 75%;
+}
+
+.bottom.building .right-section .content-frame {
+  height: 78%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .middle {
   position: absolute;
   top: 50px;
@@ -120,7 +150,7 @@ body {
 
 .middle.building {
   top: 13%;
-  height: 53%;
+  height: 52%;
 }
 
 header {
@@ -448,10 +478,11 @@ header .corpname {
   vertical-align: middle;
 }
 
-.bottombar .title-bar .title-text .systemtime {
-  float: right;
-  display: inline;
-  margin-right: 10px;
+.bottombar .systemtime {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -6px;
 }
 
 .systemtime {
@@ -530,8 +561,8 @@ header .corpname {
 .content-frame {
   overflow: hidden;
   height: 85%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
   position: relative;
 }
 
@@ -646,4 +677,381 @@ header .corpname {
 
 .floorplan .floorplan-child.active {
   display: block;
+}
+
+.hor-tab {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.hor-tab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hor-tab ul li {
+  float: left;
+  opacity: 0.6;
+  margin-left: 3px;
+  margin-right: 3px;
+  -moz-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.hor-tab ul li a {
+  position: relative;
+  padding-left: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  color: #6cc0f4;
+}
+
+.hor-tab ul li a .btntrail {
+  background-image: url(../images/tabtrail.png);
+  width: 10px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.hor-tab ul li a .menutext {
+  width: 100%;
+  line-height: 35px;
+  background-color: #00427e;
+  padding-right: 20px;
+}
+
+.hor-tab ul li a .menutext .status {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: #00ff00;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -3.5px;
+}
+
+.hor-tab ul li:hover {
+  opacity: 1;
+  -moz-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.status-all .status-child {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.status-all .status-child.active {
+  display: block;
+}
+
+.graph-row {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+.graph-row .graph-child {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-right: 1px solid #00427e;
+}
+
+.graph-row .graph-child:last-child {
+  border-right: none;
+}
+
+.graph-row .graph-child .pivot-name {
+  text-align: center;
+  font-size: 12px;
+  color: #6cc0f4;
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 20px;
+}
+
+.graph-row .graph-child .graph-body {
+  position: relative;
+  bottom: 0;
+  height: 85%;
+  display: inline;
+  float: left;
+  text-align: center;
+  color: #6cc0f4;
+  font-size: 9px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.graph-row .graph-child .graph-body.hasscale {
+  padding-left: 15px;
+}
+
+.graph-row .graph-child .graph-body.hasscale.smallscale {
+  padding-left: 12px;
+}
+
+.graph-row .graph-child .graph-body.hasscale.bigscale {
+  padding-left: 34px;
+}
+
+.graph-row .graph-child .graph-body .graph-frame {
+  position: relative;
+  margin: auto;
+  height: 80%;
+  width: 10px;
+  margin-bottom: 3px;
+  border: 1px solid #6cc0f4;
+}
+
+.graph-row .graph-child .graph-body .graph-frame .graph-amount {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 30%;
+}
+
+.graph-row .graph-child .graph-body .graph-frame .scale {
+  position: absolute;
+  right: 9px;
+  top: 0;
+  height: 100%;
+}
+
+.graph-row .graph-child .graph-body .graph-frame .scale div.unit {
+  font-size: 10px;
+  position: absolute;
+  top: -18px;
+  right: 0;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.graph-row .graph-child .graph-body .graph-frame .scale div.scale-grid {
+  min-width: 8px;
+  text-align: right;
+  background-image: url(../images/scaleline.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 20%;
+  line-height: 100%;
+  font-size: 9px;
+  position: relative;
+}
+
+.graph-row .graph-child .graph-body .graph-frame .scale div.scale-grid span {
+  position: absolute;
+  top: 0;
+  margin-top: -4px;
+  right: 10px;
+}
+
+.graph-row .graph-child .graph-body .amount {
+  font-size: 11px;
+  color: #00ff00;
+}
+
+.graph-row .graph-child .graph-body .amount.abnormal {
+  color: #ff0000;
+}
+
+.graph-row .graph-child .graph-body.abnormal .amount {
+  color: #ff0000;
+}
+
+.graph-row .graph-child .graph-body.temp .graph-frame .scale div.scale-grid {
+  height: 25%;
+}
+
+.graph-row .graph-child .graph-body.lox .graph-amount {
+  background-color: #008102;
+}
+
+.graph-row .graph-child .graph-body.o2 .graph-amount {
+  background-color: #008102;
+}
+
+.graph-row .graph-child .graph-body.nos .graph-amount {
+  background-color: #0202f8;
+}
+
+.graph-row .graph-child .graph-body.co2 .graph-amount {
+  background-color: #c0c0c0;
+}
+
+.graph-row .graph-child .graph-body.sur .graph-amount {
+  background-color: #fb0103;
+}
+
+.graph-row .graph-child .graph-body.med .graph-amount {
+  background-color: #f8f804;
+}
+
+.graph-row .graph-child .graph-body.vac .graph-amount {
+  background-color: #fffeff;
+}
+
+.graph-row .graph-child .graph-body.evac .graph-amount {
+  background-color: #fffeff;
+}
+
+.graph-row .rate {
+  position: absolute;
+  width: 100%;
+  height: 68%;
+  top: 23%;
+}
+
+.graph-row .rate > div {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  font-size: 11px;
+  color: #6cc0f4;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.graph-row .rate > div.height {
+  top: 0;
+  height: 22.7%;
+  background-color: #551d1d;
+}
+
+.graph-row .rate > div.normal {
+  top: 22.7%;
+  height: 37.3%;
+  background-color: #334626;
+}
+
+.graph-row .rate > div.low {
+  top: 60%;
+  height: 40%;
+  background-color: #551d1d;
+}
+
+.tempgraph {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
+
+.tempgraph .pivot-name {
+  padding-left: 0;
+}
+
+.tempgraph .tempscale {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.tempgraph .tempscale > div {
+  position: absolute;
+  width: 100%;
+}
+
+.tempgraph .tempscale > div.height {
+  background-color: #ff0000;
+  height: 25%;
+  top: 0;
+}
+
+.tempgraph .tempscale > div.normal {
+  background-color: #ffff00;
+  height: 50%;
+  top: 25%;
+}
+
+.tempgraph .tempscale > div.low {
+  background-color: #00ff00;
+  height: 25%;
+  top: 75%;
+}
+
+.hour .graph-row .graph-child {
+  width: 24%;
+}
+
+.hour .graph-row .graph-child .pivot-name {
+  padding: 0;
+}
+
+.hour .status-tb {
+  border-collapse: collapse;
+  border: none;
+  margin-top: 0;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hour .status-tb tr td {
+  background-color: #22347d;
+  color: #6cc0f4;
+  font-size: 11px;
+  padding: 1px 10px;
+  vertical-align: top;
+  height: 32px;
+  position: relative;
+}
+
+.hour .status-tb tr td:first-child {
+  padding-right: 15px;
+}
+
+.hour .status-tb tr td .status {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: #0b76ab;
+  right: 0px;
+  top: 15%;
+  position: absolute;
+}
+
+.hour .status-tb tr td ul {
+  list-style: none;
+  display: block;
+  width: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.hour .status-tb tr td.active .status {
+  background-color: #54f02e;
+}
+
+.hour .status-tb tr:nth-child(even) td {
+  background-color: #3a53a6;
+}
+
+.hour .pump-sw {
+  text-align: center;
+  font-size: 10px;
+  color: #6cc0f4;
+}
+
+.hour .pump-sw span.active {
+  color: white;
 }

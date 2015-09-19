@@ -28,40 +28,222 @@
 		</div>
 		<div class="bottom building">
 			<div class="left-section">
-				<div class="bottombar">
-					<span>
-						<div class="title-bar">
-						<div class="trail"></div>
-						<div class="title-text">
-							<span>
-								OVER VIEW
-								<div class="systemtime">23 AUG 2016    11:01 AM</div>
-							</span>
-						</div>
-					</div>
-					</span>
-				</div>
+				<?php include('inc_bottommenu.php'); ?>
 				<div class="content-area">
 					<div class="line-top"></div>
-					<div class="content-frame">
-						<div class="table-list">
-							<div class="container-fluid">
-								<?php for($i=0;$i<10;$i++){ ?>
-								<div class="col-xs-4">
-									<table class="status-tb">
-										<tr><th colspan="2">Syamindra <div class="status-ball"></div></th></tr>
-										<?php for($j=0;$j<7;$j++){ ?>
-										<tr>
-											<td>Medical Air</td>
-											<td>4 x 15 HP</td>
-										</tr>
-										<?php } ?>
-									</table>
+						<div class="content-frame status-all">
+							<?php include('inc_pressure.php');?>
+							<?php include('inc_temp.php');?>
+							<div class="status-child active hour" data-panel-name="hour">
+								<div class="graph-row">
+									<div class="graph-child">
+										<div class="pivot-name">Medical Air</div>
+										<table class="status-tb">
+											<tr>
+												<td class="active" data-pump-active="A">
+													Pump A 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td class="active" data-pump-active="B">
+													Pump B 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td data-pump-active="C">
+													Pump C 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td data-pump-active="D">
+													Pump D 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+										</table>
+										<div class="pump-sw">
+											<span class="active" data-pump-sw="auto">Auto</span> /
+											<span data-pump-sw="manual">Manual</span>
+										</div>
+									</div>
+									<div class="graph-child">
+										<div class="pivot-name">Surgical Air </div>
+										<table class="status-tb">
+											<tr>
+												<td class="active" data-pump-active="A">
+													Pump A 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td class="active" data-pump-active="B">
+													Pump B 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td data-pump-active="C">
+													Pump C 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td data-pump-active="D">
+													Pump D 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+										</table>
+										<div class="pump-sw">
+											<span class="active" data-pump-sw="auto">Auto</span> /
+											<span data-pump-sw="manual">Manual</span>
+										</div>
+									</div>
+									<div class="graph-child">
+										<div class="pivot-name">Vacuum</div>
+										<table class="status-tb">
+											<tr>
+												<td class="active" data-pump-active="A">
+													Pump A 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td class="active" data-pump-active="B">
+													Pump B 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td data-pump-active="C">
+													Pump C 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+										<div class="pump-sw">
+											<span class="active" data-pump-sw="auto">Auto</span> /
+											<span data-pump-sw="manual">Manual</span>
+										</div>
+									</div>
+									<div class="graph-child">
+										<div class="pivot-name">E-Vac</div>
+										<table class="status-tb">
+											<tr>
+												<td class="active" data-pump-active="A">
+													Pump A 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td class="active" data-pump-active="B">
+													Pump B 
+													<div class="status"></div>
+												</td>
+												<td>
+													<ul>
+														<li>30000 Hr.</li>
+														<li>S/N : XA123455</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+											</tr>
+										</table>
+										<div class="pump-sw">
+											<span class="active" data-pump-sw="auto">Auto</span> /
+											<span data-pump-sw="manual">Manual</span>
+										</div>
+									</div>
 								</div>
-								<?php } ?>
 							</div>
+							<div class="status-child" data-panel-name="gasflow">gasflow</div>
 						</div>
-					</div>
 					<div class="line-bottom"></div>
 				</div>
 			</div>
@@ -89,22 +271,9 @@
 		</div>
 	</div>
 </div>
+	<script type="text/javascript" src="js/mainjs.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			var menutab = $(".menutab");
-			var menuBtn = $(".menutab li a"); 
-			var _index = 0;
-			var _content = $(".floorplan .floorplan-child");
-			menuBtn.click(function(){
-				_index = $(this).parent().index();
-				_content.each(function(){
-					if($(this).hasClass("active")==true){
-						$(this).fadeOut().removeClass("active");
-					}
-				})
-				_content.eq(_index).fadeIn().addClass("active");
-			});
-			
 			//intital building name
 			var bname = '<?php echo($bname); ?>';
 			$(".right-tab > ul > li ").each(function(){
@@ -115,6 +284,5 @@
 			})
 		})
 	</script>
-	
 </body>
 </html>

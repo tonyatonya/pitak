@@ -7,6 +7,14 @@ $lightblue:#6cc0f4;
 $fnormal:12px;
 $even:#22347d;
 $ood:#3a53a6;
+
+$lox:#008102;
+$nos:#0202f8;
+$co2:#c0c0c0;
+$med:#f8f804;
+$sur:#fb0103;
+$vac:#fffeff;
+
 @mixin ts{
 	-moz-transition: all 0.1s ease-in;
 	-webkit-transition: all 0.1s ease-in;
@@ -115,7 +123,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', end
 		}
 	}
 	&.building{
-		
+		height: 35%;
+		.left-section{
+			position: absolute;
+			width: 75%;
+			height: 100%;
+			border-right: 1px solid $border;
+			.content-frame{
+				height: 78%;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+		.right-section{
+			position: absolute;
+			width: 25%;
+			height: 100%;
+			left: 75%;
+			.content-frame{
+				height: 78%;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 .middle{
@@ -134,7 +164,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a1a1a', end
 	}
 	&.building{
 		top:13%;
-		height: 53%;
+		height: 52%;
 		
 	}
 }
@@ -372,12 +402,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d3a54', end
 				display: table-cell;
 				vertical-align:middle;
 			}
-			.systemtime{
-				float: right;
-				display: inline;
-				margin-right: 10px;
-			}
 		}
+	}
+	.systemtime{
+		position: absolute;
+		right: 15px;
+		top:50%;
+		margin-top: -6px;
+		
 	}
 }
 .systemtime{
@@ -449,8 +481,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d3a54', end
 .content-frame{
 	overflow: hidden;
 	height: 85%;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	/* margin-top: 10px; */
+	/* margin-bottom: 10px; */
 	position: relative;
 	.table-list{
 		position: absolute;
@@ -556,6 +588,354 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3852', end
 		  background-position: left top;
 		&.active{
 			display: block;
+		}
+	}
+}
+.hor-tab{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			float: left;
+			opacity: 0.6;
+			margin-left: 3px;
+			margin-right: 3px;
+			@include ts;
+			a{
+				position: relative;
+				padding-left: 10px;
+				display: block;
+				text-decoration: none;
+				font-size: $fnormal;
+				color: $lightblue;
+				.btntrail{
+					background-image: url(../images/tabtrail.png);
+					width: 10px;
+					height: 35px;
+					position: absolute;
+					left: 0;
+					top:0;
+				}
+				.menutext{
+					width: 100%;
+					line-height: 35px;
+					background-color: #00427e;
+					padding-right: 20px;
+					.status{
+						width: 7px;
+						height: 7px;
+						border-radius: 100%;
+						background-color: $normal;
+						position: absolute;
+						right: 10px;
+						top:50%;
+						margin-top: -3.5px;
+					}
+				}
+			}
+			&:hover{
+				opacity: 1;
+				@include ts;
+			}
+		}
+	}
+}
+.status-all{
+	.status-child{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
+}
+.graph-row{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	.graph-child{
+		display: inline-block;
+		
+		position: relative;
+		width: auto;
+		height: 100%;
+		padding-right: 5px;
+		padding-left: 5px;
+		border-right: 1px solid $border;
+		&:last-child{border-right: none;}
+		.pivot-name{
+			text-align: center;
+			font-size: 12px;
+			color: $lightblue;
+			display: block;
+			margin-bottom: 3px;
+			padding-left: 20px;
+		}
+		.graph-body{
+			position: relative;
+			bottom: 0;
+			height: 85%;
+			display: inline;
+			float: left;
+			text-align: center;
+			color: $lightblue;
+			font-size: 9px;
+			padding-left: 1px;
+			padding-right: 1px;
+			
+			&.hasscale{
+				padding-left: 15px;
+				&.smallscale{
+					padding-left: 12px;
+				}
+				&.bigscale{
+					padding-left:34px;
+				}
+			}
+			.graph-frame{
+				position: relative;
+				margin: auto;
+				height: 80%;
+				width: 10px;
+				margin-bottom: 3px;
+				border:1px solid $lightblue;
+				.graph-amount{
+					position: absolute;
+					width: 100%;
+					left: 0;
+					bottom: 0;
+					overflow: hidden;
+					height: 30%;//remove this before test
+					
+				}
+				.scale{
+					position: absolute;
+					right: 9px;
+					top:0;
+					height: 100%;
+					div{
+						&.unit{
+							font-size: 10px;
+							position: absolute;
+							top:-18px;
+							right: 0;
+							text-align: right;
+							padding-right: 10px;
+						}
+						&.scale-grid{
+							min-width: 8px;
+							text-align: right;
+							background-image: url(../images/scaleline.jpg);
+							background-position: right top;
+							background-repeat: no-repeat;
+							height: 20%;
+							line-height: 100%;
+							font-size: 9px;
+							position: relative;
+							span{
+								position: absolute;
+								top:0;
+								margin-top: -4px;
+								right: 10px;
+							}
+						}
+						
+					}
+				}
+			}
+			.amount{
+				font-size: 11px;
+				color: $normal;
+				&.abnormal{
+					color: $abnormal;
+				}
+			}
+			&.abnormal{
+				.amount{
+					color: $abnormal;
+				}
+			}
+			&.temp{
+				.graph-frame{
+					.scale{
+						div{
+							&.scale-grid{
+								height: 25%;
+							}
+						}
+					}
+				}
+			}
+			
+			&.lox{
+				.graph-amount{
+					background-color: $lox;
+				}
+			}
+			&.o2{
+				.graph-amount{
+					background-color: $lox;
+				}
+			}
+			&.nos{
+				.graph-amount{
+					background-color: $nos;
+				}
+			}
+			&.co2{
+				.graph-amount{
+					background-color: $co2;
+				}
+			}
+			&.sur{
+				.graph-amount{
+					background-color: $sur;
+				}
+			}
+			&.med{
+				.graph-amount{
+					background-color: $med;
+				}
+			}
+			&.vac{
+				.graph-amount{
+					background-color: $vac;
+				}
+			}
+			&.evac{
+				.graph-amount{
+					background-color: $vac;
+				}
+			}
+			
+			
+		}
+		
+	}
+	.rate{
+		position: absolute;
+		width: 100%;
+		height: 68%;
+		top:23%;
+		>div{
+			position: absolute;
+			width: 100%;
+			text-align: left;
+			font-size: 11px;
+			color: $lightblue;
+			padding-top: 2px;
+			padding-left: 2px;
+			&.height{
+				top:0;
+				height: 22.7%;	
+				background-color: #551d1d;
+			}
+			&.normal{
+				top:22.7%;
+				height: 37.3%;
+				background-color: #334626;
+			}
+			&.low{
+				top:60%;
+				height: 40%;
+				background-color: #551d1d;
+			}
+		}
+	}
+}
+.tempgraph{
+	padding-left: 5% !important;
+	padding-right: 5% !important;
+	.pivot-name{
+		padding-left: 0;
+	}
+	.tempscale{
+		width:100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		>div{
+			position: absolute;
+			width: 100%;
+			&.height{background-color:#ff0000; height: 25%;top:0;}
+			&.normal{background-color:#ffff00;height: 50%;top:25%;}
+			&.low{background-color:#00ff00; height: 25%; top:75%;}
+		}
+	}
+}
+.hour{
+	.graph-row{
+		.graph-child{
+			width: 24%;
+			.pivot-name{
+				padding: 0;
+			}
+		}
+	}
+	.status-tb{
+		border-collapse: collapse;
+		border:none;
+		margin-top: 0;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		tr{
+			td{
+				background-color:$even;
+				color: $lightblue;
+				font-size: 11px;
+				padding:  1px 10px;
+				vertical-align: top;
+				height: 32px;
+				position: relative;
+				&:first-child{
+					padding-right: 15px;
+				}
+				.status{
+					width: 7px;
+					height: 7px;
+					border-radius: 100%;
+					background-color: $nonactive;
+					right: 0px;
+					top:15%;
+					position: absolute;
+				}
+				ul{
+					list-style: none;
+					display: block;
+					width: 100%;
+					color: white;
+					margin: 0;
+					padding: 0;
+				}
+				&.active{
+					.status{
+						background-color: $active;
+					}
+				}
+			}
+			&:nth-child(even){
+				td{
+					background-color:$ood;
+				}
+			}
+		}
+	}
+	.pump-sw{
+		text-align: center;
+		font-size: 10px;
+		color: $lightblue;
+		span{
+			&.active{
+				color: white;
+			}
 		}
 	}
 }
