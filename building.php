@@ -64,6 +64,7 @@
 		</div>
 	</div>
 </div>
+<?php include('inc_report.php'); ?>
 	<script type="text/javascript" src="js/mainjs.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){

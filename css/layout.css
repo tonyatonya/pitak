@@ -1197,7 +1197,7 @@ header .corpname {
   height: 100%;
   width: 92%;
   border-right: 1px solid #00427e;
-  left: 0;
+  right: 100%;
 }
 
 .report-panel .report-btn {
@@ -1265,4 +1265,82 @@ header .corpname {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.report-panel .report-ref {
+  text-align: right;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #0071bc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.report-panel .report-ref span {
+  color: #6ebeff;
+  font-size: 14px;
+}
+
+.report-panel .table-frame {
+  padding: 10px;
+  border: 1px solid #00427e;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.report-tb {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+.report-tb tr th {
+  color: #6cc0f4;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 5px;
+  position: relative;
+  background-color: #0071bc;
+  text-align: center;
+  color: white;
+}
+
+.report-tb tr td {
+  background-color: #3a53a6;
+  color: white;
+  font-size: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  vertical-align: center;
+  text-align: center;
+}
+
+.report-tb tr td.gab {
+  background-color: #b3b3b3 !important;
+  height: 5px;
+}
+
+.report-tb tr:nth-child(even) td {
+  background-color: #22347d;
+}
+
+.report-tb.abnormal tr th .status-ball {
+  background-color: #ff0000;
+}
+
+.title-tb {
+  background-color: #b3b3b3 !important;
+  margin: 0;
+  padding: 5px 10px;
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

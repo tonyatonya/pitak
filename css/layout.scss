@@ -1105,8 +1105,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3852', end
 	height: 100%;
 	width: 92%;
 	border-right: 1px solid $border;
-	left:0;
-	//right: 100%;
+	//left:0;
+	right: 100%;
 	.report-btn{
 		position: absolute;
 		right: -35px;
@@ -1160,4 +1160,82 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3852', end
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.report-ref{
+		text-align: right;
+		padding-left: 15px;
+		padding-right: 15px;
+		background-color:#0071bc;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 16px;
+		color: white;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		span{
+			color: #6ebeff;
+			font-size: 14px;
+		}
+	}
+	.table-frame{
+		padding: 10px;
+		border:1px solid $border;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+.report-tb{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 1px;
+	tr{
+		th{
+			color: $lightblue;
+			font-size: 12px;
+			font-weight: normal;
+			padding: 5px;
+			position: relative;
+			background-color: #0071bc;
+			text-align: center;
+			color: white;
+		}
+		td{
+			background-color: $ood;
+			color:white;
+			font-size: 12px;
+			padding-left: 2px;
+			padding-right: 2px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			vertical-align: center;
+			text-align: center;
+			&.gab{
+				background-color: #b3b3b3 !important;
+				height: 5px;
+			}
+		}
+		&:nth-child(even){
+			td{
+				background-color:$even;
+			}
+		}
+	}
+	&.abnormal{
+		tr{
+			th{
+				.status-ball{
+					background-color: $abnormal;
+				}
+			}
+		}
+	}
+}
+.title-tb{
+	background-color: #b3b3b3 !important;
+	margin: 0;
+	padding: 5px 10px;
+	text-align: center;
+	color: #1a1a1a;
+	font-size: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
