@@ -5,15 +5,19 @@ $(document).ready(function(){
 	var _content = $(".floorplan .floorplan-child");
 	
 	menuBtn.click(function(){
-		_index = $(this).parent().index();
-		_content.each(function(){
-			if($(this).hasClass("active")==true){
-				$(this).fadeOut().removeClass("active");
-			}
-		})
-		_content.eq(_index).fadeIn().addClass("active");
+		if($(this).parent().hasClass("active")== false){
+			menutab.find(".active").removeClass("active");
+			$(this).parent().addClass("active");
+			
+			_index = $(this).parent().index();
+			_content.each(function(){
+				if($(this).hasClass("active")==true){
+					$(this).fadeOut().removeClass("active");
+				}
+			})
+			_content.eq(_index).fadeIn().addClass("active");
+		}
 	});
-	
 	
 	//bottom tab
 	$(".bottom-tab a").click(function(){
@@ -34,7 +38,26 @@ $(document).ready(function(){
 		}
 	})
 	
+	//open report panel
+	$('.report-btn a').click(function(e){
+		e.preventDefault();
+		var _report = $("body").find('.report-panel');
+		if(_report.hasClass("active") == false){
+			_report.addClass("active");
+			_report.animate({
+				'right':'8%'
+			},1000)
+		}else{
+			_report.animate({
+				'right':"100%"
+			});
+			_report.removeClass("active");
+		}
+		
+	})
 })
+
+
 $(window).load(function(){
 	//intitial temp scale
 	$(".graph-body.temp").each(function(){

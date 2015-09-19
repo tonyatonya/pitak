@@ -1,4 +1,4 @@
-<div class="status-child" data-panel-name="pressure">
+<div class="status-child active" data-panel-name="pressure">
 	<div class="graph-row">
 		<div class="rate">
 			<div class="height">High</div>

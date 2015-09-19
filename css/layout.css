@@ -1,4 +1,36 @@
 /*===============================================*/
+@font-face {
+  font-family: 'digital-7_monoitalic';
+  src: url("../fonts/digital-7_mono_italic-webfont.eot");
+  src: url("../fonts/digital-7_mono_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/digital-7_mono_italic-webfont.woff2") format("woff2"), url("../fonts/digital-7_mono_italic-webfont.woff") format("woff"), url("../fonts/digital-7_mono_italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'digital-7_monomono';
+  src: url("../fonts/digital-7_mono-webfont.eot");
+  src: url("../fonts/digital-7_mono-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/digital-7_mono-webfont.woff2") format("woff2"), url("../fonts/digital-7_mono-webfont.woff") format("woff"), url("../fonts/digital-7_mono-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'digital-7_italicitalic';
+  src: url("../fonts/digital-7_italic-webfont.eot");
+  src: url("../fonts/digital-7_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/digital-7_italic-webfont.woff2") format("woff2"), url("../fonts/digital-7_italic-webfont.woff") format("woff"), url("../fonts/digital-7_italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'digital-7regular';
+  src: url("../fonts/digital-7-webfont.eot");
+  src: url("../fonts/digital-7-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/digital-7-webfont.woff2") format("woff2"), url("../fonts/digital-7-webfont.woff") format("woff"), url("../fonts/digital-7-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -746,6 +778,10 @@ header .corpname {
   transition: all 0.1s ease-in;
 }
 
+.hor-tab ul li.active {
+  opacity: 1;
+}
+
 .status-all .status-child {
   position: absolute;
   width: 100%;
@@ -1054,4 +1090,179 @@ header .corpname {
 
 .hour .pump-sw span.active {
   color: white;
+}
+
+.gasflow .graph-row .graph-child {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.gasflow .graph-row .graph-child .pivot-name {
+  padding-left: 0;
+}
+
+.tank {
+  display: inline;
+  float: left;
+  position: relative;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+}
+
+.tank .remaining-box {
+  background-color: #00427e;
+  padding: 3px 5px;
+}
+
+.tank .remaining-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tank .remaining-box ul li {
+  width: 100%;
+  text-align: center;
+  font-size: 9px;
+  color: white;
+}
+
+.tank .tankname {
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  width: 100%;
+  display: block;
+}
+
+.tank .tankgraph {
+  display: inline-block;
+  clear: both;
+}
+
+.tank .remaining {
+  font-size: 12px;
+  color: #00ff00;
+  display: block;
+  clear: both;
+}
+
+.tank .remaining-text {
+  text-align: center;
+  color: #00ff00;
+  font-size: 20px;
+  font-family: 'digital-7_italicitalic';
+  line-height: 20px;
+}
+
+.tb-gas {
+  border-collapse: separate;
+  border-spacing: 3px;
+}
+
+.tb-gas tr td {
+  color: white;
+  font-size: 11px;
+  border-width: 2px;
+  vertical-align: middle;
+}
+
+.tb-gas tr td table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+.tb-gas .num {
+  border: 1px solid #6cc0f4;
+  vertical-align: middle;
+  text-align: center;
+  color: #00ff00;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.tb-gas .num.led {
+  font-family: 'digital-7_italicitalic';
+  font-size: 25px;
+  text-align: right;
+}
+
+.report-panel {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  background-color: #1a1a2a;
+  height: 100%;
+  width: 92%;
+  border-right: 1px solid #00427e;
+  left: 0;
+}
+
+.report-panel .report-btn {
+  position: absolute;
+  right: -35px;
+  top: 15%;
+}
+
+.report-panel .report-frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.report-panel .report-frame .report-scroll {
+  position: absolute;
+  width: 102%;
+  height: 100%;
+  overflow: auto;
+}
+
+.report-panel .report-title {
+  width: 100%;
+  border-bottom: 3px solid #b3b3b3;
+  background-color: #2594e9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.report-panel .report-title h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+.report-panel .report-control {
+  border-bottom: 3px solid #b3b3b3;
+  background-color: #9ecdff;
+}
+
+.report-panel .report-control:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+.report-panel .report-control .form-group {
+  padding-top: 10px;
+  padding-bottom: 10x;
+  display: inline;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.report-panel .report-body {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
