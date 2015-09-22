@@ -1,5 +1,22 @@
 <div class="right-tab">
 	<ul>
+		<?php for($i=1;$i<5;$i++){ ?>
+		<li data-building="Building <?php echo($i); ?>">
+			<a href="building.php">
+				<div class="top-bg">
+					<img src="images/rightmenutopbg.png" alt="rightmenutopbg">
+				</div>
+				<div class="status"></div>
+				<div class="text">Building <?php echo($i); ?></div>
+			</a>
+		</li>
+		<?php } ?>
+	</ul>
+	<a href="#" class="testbtn"></a>
+</div>
+<!--
+	<div class="right-tab">
+	<ul>
 		<li data-building="Syamindra">
 			<a href="building.php">
 				<div class="top-bg">
@@ -91,4 +108,6 @@
 			</a>
 		</li>
 	</ul>
+	<a href="#" class="testbtn"></a>
 </div>
+-->

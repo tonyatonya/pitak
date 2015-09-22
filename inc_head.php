@@ -1,6 +1,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+
 <link type="image/ico" rel="shortcut icon" href="images/favicon.ico">
 <link type="text/css" rel="stylesheet" href="css/reset.css" media="screen,projection"/>
 <link type="text/css" rel="stylesheet" href="css/print.css" media="print"/>

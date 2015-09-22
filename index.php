@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="login">
 <head>
 <title>IMG SYSTEM</title>
 <?php include('inc_head.php'); ?>
 </head>
-<body>
-<div class="container-fluid fixarea">
-	<?php include('inc_header.php'); ?>
-	<div class="right">
-		<?php include('inc_rightmenu.php'); ?>
-	</div>
-	<div class="left">
-		<?php include('inc_toptab.php'); ?>
-		<div class="middle contents">
-			<div class="content-child active">1</div>
-			<div class="content-child">2</div>
-			<div class="content-child">3</div>
-			<div class="content-child">4</div>
+<body style="background:none;">
+	<div class="login-wrapper">
+		<span>
+			<div class="login-panel">
+				<div class="form">
+					<table>
+						<tr>
+							<th>Sign In For Demonstration</th>
+						</tr>
+						<tr>
+							<td>
+								<div class="input-group">
+							      <div class="input-group-addon"><span class="icon icon-user"></span></div>
+							      <input type="text" class="form-control" id="exampleInputAmount" placeholder="email">
+							    </div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="input-group">
+							      <div class="input-group-addon"><span class="icon icon-mobile"></span></div>
+							      <input type="text" class="form-control" id="exampleInputAmount" placeholder="mobile number">
+							    </div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="input-group">
+							      <div class="input-group-addon"><span class="icon icon-key"></span></div>
+							      <input type="password" class="form-control" id="exampleInputAmount" placeholder="password">
+							    </div>
+							</td>
+						</tr>
+						<tr>
+							<td><button><img src="images/loginbtn.png" alt="loginbtn" width="280" height="40"></button></td>
+						</tr>
+					</table>
+				</div>
+				<img src="images/login-panel.png" alt="login-panel" width="347" height="386">
 		</div>
-		<div class="bottom"></div>
+			<div class="login-img">
+				<img src="images/loginimg.png" alt="loginimg" width="324" height="251">
+			</div>
+		</span>
 	</div>
-</div>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var menutab = $(".menutab");
-			var menuBtn = $(".menutab li a"); 
-			var _index = 0;
-			var _content = $(".contents .content-child");
-			menuBtn.click(function(){
-				_index = $(this).parent().index();
-				_content.each(function(){
-					if($(this).hasClass("active")==true){
-						$(this).hide().removeClass("active");
-					}
-				})
-				_content.eq(_index).show().addClass("active");
-			});
-		})
-	</script>
 </body>
 </html>

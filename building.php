@@ -7,7 +7,7 @@
 <body>
 <?php 
 	//building name
-	$bname = 'Syamindra'
+	$bname = 'Building 1';
 ?>
 <div class="container-fluid fixarea">
 	<?php include('inc_header.php'); ?>
