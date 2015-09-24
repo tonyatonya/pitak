@@ -2,7 +2,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-4 memberzone">
-				<div class="holdcenter">
+				<div class="holdcenter" style="display: inline; float:left">
 					<table >
 						<tr>
 							<td><img src="images/companylogo.png" alt="companylogo" width="114" height="40" /></td>
@@ -15,7 +15,8 @@
 				</div>
 			<div class="col-xs-4 systemname"><img src="images/systemlogo.png" alt="systemlogo" width="227" height="50" /></div>
 			<div class="col-xs-4 corpname">
-				
+				<div class="holdcenter" style="display: inline; float:right">
+				</div>
 				<img src="images/rightheader.png" alt="rightheader" class="trail"/>
 			</div>
 		</div>

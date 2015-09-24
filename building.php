@@ -13,18 +13,25 @@
 	<?php include('inc_header.php'); ?>
 	<div class="right">
 		<?php include('inc_rightmenu.php'); ?>
+		<?php include('inc_rightmenu-amb.php'); ?>
 	</div>
 	<div class="left">
 		<?php include('inc_toptab.php'); ?>
 		<div class="middle floorplan building">
-			<div class="floorplan-child active" style="background-image:url(images/floorplan/_0000_manifold.jpg);"></div>
-			<div class="floorplan-child" style="background-image:url(images/floorplan/_0001_equipment.jpg); "></div>
-			<div class="floorplan-child">Pre</div>
-			<div class="floorplan-child">Status</div>
-			<div class="floorplan-child" style="background-image:url(images/floorplan/_0002_er.jpg); "></div>
-			<div class="floorplan-child" style="background-image:url(images/floorplan/_0003_generalcase.jpg); "></div>
-			<div class="floorplan-child" style="background-image:url(images/floorplan/_0004_icu.jpg); "></div>
-			<div class="floorplan-child" style="background-image:url(images/floorplan/_0005_or.jpg);"></div>
+			<div class="floorplan-child active">
+				<?php include('inc_manifold.php'); ?>
+			</div>
+			<div class="floorplan-child">
+				<?php include('inc_equipment.php'); ?>
+			</div>
+			<div class="floorplan-child"><?php include('inc_prehospital.php'); ?></div>
+			<div class="floorplan-child"><?php include('inc_iems.php'); ?></div>
+			<div class="floorplan-child">
+				<?php include('inc_er.php'); ?>
+			</div>
+			<div class="floorplan-child"><?php include('inc_or.php'); ?></div>
+			<div class="floorplan-child"><?php include('inc_icu.php'); ?></div>
+			<div class="floorplan-child"><?php include('inc_general.php'); ?></div>
 		</div>
 		<div class="bottom building">
 			<div class="left-section">

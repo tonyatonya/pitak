@@ -1,6 +1,6 @@
 <div class="top-tab hor-tab">
 	<ul class="menutab ">
-		<li class="active">
+		<li class="active" data-tab-target="building">
 			<a href="#">
 				<div class="btntrail"></div>
 				<div class="menutext">
@@ -9,7 +9,7 @@
 				</div>
 			</a>
 		</li>
-		<li>
+		<li data-tab-target="building">
 			<a href="#">
 				<div class="btntrail"></div>
 				<div class="menutext">
@@ -18,7 +18,7 @@
 				</div>
 			</a>
 		</li>
-		<li class="gab">
+		<li class="gab" data-tab-target="amb">
 			<a href="#">
 				<div class="btntrail"></div>
 				<div class="menutext">
@@ -27,7 +27,7 @@
 				</div>
 			</a>
 		</li>
-		<li>
+		<li data-tab-target="amb">
 			<a href="#">
 				<div class="btntrail"></div>
 				<div class="menutext">
@@ -36,7 +36,7 @@
 				</div>
 			</a>
 		</li>
-		<li>
+		<li data-tab-target="building">
 			<a href="#">
 				<div class="btntrail"></div>
 				<div class="menutext">
@@ -45,7 +45,7 @@
 				</div>
 			</a>
 		</li>
-		<li>
+		<li data-tab-target="building">
 			<a href="#">
 				<div class="btntrail"></div>
 				<div class="menutext">
@@ -55,7 +55,7 @@
 			</a>
 		</li>
 		
-		<li>
+		<li data-tab-target="building">
 			<a href="#">
 				<div class="btntrail"></div>
 				<div class="menutext">
@@ -64,7 +64,7 @@
 				</div>
 			</a>
 		</li>
-		<li>
+		<li data-tab-target="building">
 			<a href="#">
 				<div class="btntrail"></div>
 				<div class="menutext">

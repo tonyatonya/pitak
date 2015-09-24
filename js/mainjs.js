@@ -4,11 +4,11 @@ $(document).ready(function(){
 	var _index = 0;
 	var _content = $(".floorplan .floorplan-child");
 	
-	menuBtn.click(function(){
+	menuBtn.click(function(e){
+		e.preventDefault();
 		if($(this).parent().hasClass("active")== false){
 			menutab.find(".active").removeClass("active");
 			$(this).parent().addClass("active");
-			
 			_index = $(this).parent().index();
 			_content.each(function(){
 				if($(this).hasClass("active")==true){
@@ -16,6 +16,55 @@ $(document).ready(function(){
 				}
 			})
 			_content.eq(_index).fadeIn().addClass("active");
+			
+			if($(this).parent().attr('data-tab-target')== 'building'){
+				$(".right-tab").each(function(){
+					var _attr = $(this).attr('data-menu-name');
+					
+					if(_attr == 'menubuilding'){
+						console.log("_attr =", _attr);
+						$(this).show();
+					}else{
+						$(this).hide();
+					}
+				})
+				
+				$(".report-panel").each(function(){
+					var _attr = $(this).attr('data-menu-name');
+					
+					if(_attr == 'menubuilding'){
+						console.log("_attr =", _attr);
+						$(this).show();
+					}else{
+						$(this).hide();
+					}
+				})
+				
+				
+				
+			}else if($(this).parent().attr('data-tab-target')== 'amb'){
+				$(".right-tab").each(function(){
+					var _attr = $(this).attr('data-menu-name');
+					
+					if(_attr == 'menuamb'){
+						console.log("_attr =", _attr);
+						$(this).show();
+					}else{
+						$(this).hide();
+					}
+				})
+				$(".report-panel").each(function(){
+					var _attr = $(this).attr('data-menu-name');
+					
+					if(_attr == 'menuamb'){
+						console.log("_attr =", _attr);
+						$(this).show();
+					}else{
+						$(this).hide();
+					}
+				})
+				
+			}
 		}
 	});
 	
@@ -54,6 +103,22 @@ $(document).ready(function(){
 			_report.removeClass("active");
 		}
 		
+	})
+	
+	//floor plan panel click
+	$(".tb-panel .tb-panel-btn").click(function(){
+		var _panel = $(this).parent();
+		var _target = $(this).parent().find(".tb-panel-body");
+		if(_panel.hasClass("active") == false){
+			$("body").find(".tb-panel.active .tb-panel-btn").trigger('click');
+			_panel.addClass("active");
+			_target.slideToggle();
+		}else{
+			_target.slideToggle(function(){
+				_panel.removeClass("active");
+			});
+			
+		}
 	})
 })
 

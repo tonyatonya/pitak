@@ -1,0 +1,1 @@
+<img src="images/floorplan/_0001_equipment.jpg" alt="_0000_manifold" class="plan"/>

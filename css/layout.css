@@ -168,6 +168,25 @@ body {
   top: 50px;
   left: 0;
   width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001d45+0,101529+100 */
+  background: #001d45;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMWQ0NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMDE1MjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #001d45 0%, #101529 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #001d45), color-stop(100%, #101529));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #001d45 0%, #101529 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #001d45 0%, #101529 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #001d45 0%, #101529 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #001d45 0%, #101529 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001d45', endColorstr='#101529',GradientType=0 );
+  /* IE6-8 */
 }
 
 .middle.homeplan {
@@ -711,6 +730,113 @@ header .corpname {
   display: block;
 }
 
+.floorplan .floorplan-child .plan {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.floorplan .floorplan-child .tb-panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 190px;
+}
+
+.floorplan .floorplan-child .tb-panel.active {
+  z-index: 11;
+}
+
+.floorplan .floorplan-child .tb-panel .tb-panel-btn {
+  height: 31px;
+  position: relative;
+  color: #6cc0f4;
+  font-size: 12px;
+  padding-left: 10px;
+  line-height: 31px;
+  cursor: pointer;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1c3852+0,1a1a1a+100 */
+  background: #1c3852;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjMzg1MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTFhMWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #1c3852 0%, #1a1a1a 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1c3852), color-stop(100%, #1a1a1a));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #1c3852 0%, #1a1a1a 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #1c3852 0%, #1a1a1a 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #1c3852 0%, #1a1a1a 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #1c3852 0%, #1a1a1a 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3852', endColorstr='#1a1a1a',GradientType=0 );
+  /* IE6-8 */
+}
+
+.floorplan .floorplan-child .tb-panel .tb-panel-btn .status {
+  width: 7px;
+  height: 7px;
+  background-color: #00ff00;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -3.5px;
+  right: 30px;
+}
+
+.floorplan .floorplan-child .tb-panel .tb-panel-btn .arrow {
+  width: 8px;
+  height: 6px;
+  background-image: url(../images/panelarrow.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 10px;
+}
+
+.floorplan .floorplan-child .tb-panel .tb-panel-body {
+  display: none;
+}
+
+.floorplan .floorplan-child .tb-panel .tb-panel-body table {
+  width: 100%;
+  border-collapse: separate;
+}
+
+.floorplan .floorplan-child .tb-panel .tb-panel-body table tr td {
+  background-color: #3a53a6;
+  color: #6cc0f4;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-width: 1px;
+}
+
+.floorplan .floorplan-child .tb-panel .tb-panel-body table tr td:first-child {
+  border-right: 1px solid white;
+}
+
+.floorplan .floorplan-child .tb-panel .tb-panel-body table tr:nth-child(even) td {
+  background-color: #22347d;
+}
+
+.floorplan .floorplan-child .tb-panel .tb-panel-body table tr.abnormal td {
+  background-color: #ff0000;
+  color: white;
+}
+
+.floorplan .floorplan-child .tb-panel.abnormal .tb-panel-btn .status {
+  background-color: #ff0000;
+}
+
 .hor-tab {
   position: absolute;
   left: 0;
@@ -1231,6 +1357,25 @@ header .corpname {
   padding-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f71c2+0,1a3e66+100 */
+  background: #1f71c2;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFmNzFjMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTNlNjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left, #1f71c2 0%, #1a3e66 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #1f71c2), color-stop(100%, #1a3e66));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #1f71c2 0%, #1a3e66 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #1f71c2 0%, #1a3e66 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #1f71c2 0%, #1a3e66 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, #1f71c2 0%, #1a3e66 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f71c2', endColorstr='#1a3e66',GradientType=1 );
+  /* IE6-8 */
 }
 
 .report-panel .report-title h1 {
@@ -1244,6 +1389,25 @@ header .corpname {
 .report-panel .report-control {
   border-bottom: 3px solid #b3b3b3;
   background-color: #9ecdff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c314a+0,4b7d9c+100 */
+  background: #2c314a;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJjMzE0YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0YjdkOWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #2c314a 0%, #4b7d9c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2c314a), color-stop(100%, #4b7d9c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2c314a 0%, #4b7d9c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2c314a 0%, #4b7d9c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2c314a 0%, #4b7d9c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #2c314a 0%, #4b7d9c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c314a', endColorstr='#4b7d9c',GradientType=0 );
+  /* IE6-8 */
 }
 
 .report-panel .report-control:after {
@@ -1260,6 +1424,14 @@ header .corpname {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
+  width: 100%;
+}
+
+.report-panel .report-control .form-group label {
+  color: #6ebeff;
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 5px;
 }
 
 .report-panel .report-body {
@@ -1291,6 +1463,46 @@ header .corpname {
   border: 1px solid #00427e;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.report-panel button {
+  background-color: #29abe2;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.report-panel button .icon {
+  font-size: 20px;
+  color: white;
+  margin-right: 5px;
+}
+
+.report-panel select {
+  height: 35px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  appearance: button;
+  background-image: url(../images/selectarrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-position-x: 95%;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 25px;
+  -moz-padding-end: 25px;
+  -webkit-padding-start: 15px;
+  -moz-padding-start: 15px;
+}
+
+.report-panel .btn-group {
+  width: 100%;
+  text-align: right;
 }
 
 .report-tb {
@@ -1333,6 +1545,10 @@ header .corpname {
 
 .report-tb.abnormal tr th .status-ball {
   background-color: #ff0000;
+}
+
+.report-tb.noborder {
+  border-collapse: collapse;
 }
 
 .title-tb {
@@ -1441,4 +1657,189 @@ header .corpname {
 .login-panel .form button {
   background: none;
   border: none;
+}
+
+.prehostpital {
+  position: relative;
+  z-index: 999;
+}
+
+.prehostpital table {
+  width: 100%;
+}
+
+.prehostpital table tr td.vergap {
+  background-image: url(../images/verticalgap.jpg);
+  width: 9px;
+}
+
+.prehostpital table tr td.horgap {
+  background-image: url(../images/horgap.jpg);
+  height: 9px;
+}
+
+.iems {
+  position: fixed;
+  left: 0;
+  top: 13%;
+  width: 92%;
+  height: 87%;
+  overflow: hidden;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#001d45+0,101529+100 */
+  background: #001d45;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMWQ0NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMDE1MjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #001d45 0%, #101529 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #001d45), color-stop(100%, #101529));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #001d45 0%, #101529 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #001d45 0%, #101529 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #001d45 0%, #101529 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #001d45 0%, #101529 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001d45', endColorstr='#101529',GradientType=0 );
+  /* IE6-8 */
+  z-index: 10;
+}
+
+.iems .tb-frame {
+  position: absolute;
+  top: 15%;
+  width: 102%;
+  height: 85%;
+  overflow: auto;
+}
+
+.iems .main-iems {
+  width: 90%;
+  margin: auto;
+}
+
+.iems .main-iems > tbody > tr > td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #00427e;
+}
+
+.iems .main-iems > tbody > tr > td .pa {
+  border: 1px solid #00427e;
+}
+
+.iems .main-iems > tbody > tr > td .pa table {
+  width: 100%;
+}
+
+.iems .main-iems > tbody > tr > td .pa table tr th {
+  background-color: #032f5e;
+  font-size: 12px;
+  color: #6cc0f4;
+  padding: 3px;
+}
+
+.iems .main-iems > tbody > tr > td .pa table tr td {
+  text-align: left;
+  padding: 0px 3px;
+  color: #6cc0f4;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.iems .main-iems > tbody > tr > td .pa table tr:nth-child(2) td {
+  padding: 5px 3px 0px 3px;
+}
+
+.iems .main-iems > tbody > tr > td .pa table tr:last-child td {
+  padding: 0px 3px 5px 3px;
+}
+
+.iems .main-iems > tbody > tr > td.arrow button {
+  background: none;
+  border: none;
+  height: 23px;
+  width: 37px;
+  background-image: url(../images/arrow.png);
+  background-position: 0 23px;
+}
+
+.iems .main-iems > tbody > tr > td.arrow button.active {
+  background-position: 0 23px;
+}
+
+.iems .main-iems > tbody > tr > td.arrow button:hover {
+  background-position: 0 0px;
+}
+
+.iems .main-iems > tbody > tr > td:first-child, .iems .main-iems > tbody > tr > td:nth-child(3), .iems .main-iems > tbody > tr > td:nth-child(5) {
+  width: 28.33%;
+}
+
+.iems .main-iems > tbody > tr > td:nth-child(2), .iems .main-iems > tbody > tr > td:nth-child(4) {
+  width: 8%;
+}
+
+.iems .main-iems > tbody > tr > th {
+  color: #6cc0f4;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.iems .main-iems > tbody > tr > th:first-child, .iems .main-iems > tbody > tr > th:nth-child(3), .iems .main-iems > tbody > tr > th:nth-child(5) {
+  width: 28.33%;
+}
+
+.iems .main-iems > tbody > tr > th:nth-child(2), .iems .main-iems > tbody > tr > th:nth-child(4) {
+  width: 8%;
+}
+
+.iems .main-iems > tbody > tr:last-child td {
+  border-bottom: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.amb-report .report-tb {
+  /* border-collapse: collapse; */
+}
+
+.amb-report .report-tb tr td {
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.amb-report .report-tb tr td input[type="text"], .amb-report .report-tb tr td input[type="date"], .amb-report .report-tb tr td input[type="time"] {
+  width: 100%;
+  border-radius: 3px;
+  min-width: 100px;
+  color: black;
+  padding: 3px 5px;
+  border: none;
+}
+
+.amb-report .report-tb tr td input[type="text"].small, .amb-report .report-tb tr td input[type="date"].small, .amb-report .report-tb tr td input[type="time"].small {
+  max-width: 60px;
+  min-width: min-intrinsic;
+}
+
+.amb-report .report-tb tr td label {
+  max-width: none;
+  margin-bottom: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.amb-report .report-tb tr td table {
+  width: 100%;
+}
+
+.amb-report .report-tb tr td table.pa-option {
+  width: 100%;
 }
