@@ -718,12 +718,17 @@ header .corpname {
   width: 100%;
   height: 100%;
   display: none;
+  overflow: hidden;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: left top;
+}
+
+.floorplan .floorplan-child.expand {
+  overflow: visible;
 }
 
 .floorplan .floorplan-child.active {
@@ -1265,6 +1270,30 @@ header .corpname {
 .tank .tankgraph {
   display: inline-block;
   clear: both;
+  position: relative;
+}
+
+.tank .tankgraph img {
+  position: relative;
+  z-index: 2;
+}
+
+.tank .tankgraph .tank-amounth {
+  position: absolute;
+  width: 24px;
+  height: 43px;
+  left: 5px;
+  bottom: 6px;
+  z-index: 1;
+}
+
+.tank .tankgraph .tank-amounth .tank-amounth-rate {
+  background-color: #2a9fe7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
 }
 
 .tank .remaining {

@@ -999,6 +999,26 @@
 							<td colspan="14">
 								<table>
 									<tr>
+										<td style="width: 8%;"><label>อาการสำคัญ</label></td>
+										<td><input type="text"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="14">
+								<table>
+									<tr>
+										<td style="width: 8%;"><label>โรคประจำตัว</label></td>
+										<td><input type="text"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="14">
+								<table>
+									<tr>
 										<td width="13%;"><label>ยา(วิธีใช้ และขนาดให้ระบุ)</label></td>
 										<td><input type="text"></td>
 									</tr>

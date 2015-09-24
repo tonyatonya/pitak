@@ -647,12 +647,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3852', end
 		width: 100%;
 		height: 100%;
 		display:none;
+		overflow: hidden;
 		background-repeat: no-repeat;
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
 		  background-size: cover;
 		  background-position: left top;
+		&.expand{
+			overflow: visible;
+		}
 		&.active{
 			display: block;
 		}
@@ -1153,6 +1157,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c3852', end
 	.tankgraph{
 		display: inline-block;
 		clear: both;
+		position: relative;
+		img{
+			position: relative;
+			z-index: 2;
+		}
+		.tank-amounth{
+			position: absolute;
+			width: 24px;
+			height: 43px;
+			left: 5px;
+			bottom: 6px;
+			z-index: 1;
+			.tank-amounth-rate{
+				background-color: #2a9fe7;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 80%;	
+			}
+		}
 	}
 	.remaining{
 		font-size: 12px;

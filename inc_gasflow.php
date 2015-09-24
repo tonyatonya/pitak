@@ -6,7 +6,9 @@
 				<div class="tankname">Tank 1</div>
 				<div class="tankgraph">
 					<img src="images/loxframe.png" alt="loxframe"/>
-					<div class="tank-amounth"></div>
+					<div class="tank-amounth">
+						<div class="tank-amounth-rate"></div>
+					</div>
 				</div>
 				<div class="remaining">Remaining</div>
 				<div class="remaining-text">80%</div>
@@ -22,7 +24,9 @@
 				<div class="tankname">Tank 2</div>
 				<div class="tankgraph">
 					<img src="images/loxframe.png" alt="loxframe"/>
-					<div class="tank-amounth"></div>
+					<div class="tank-amounth">
+						<div class="tank-amounth-rate"></div>
+					</div>
 				</div>
 				<div class="remaining">Remaining</div>
 				<div class="remaining-text">80%</div>

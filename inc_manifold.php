@@ -22,7 +22,7 @@
 		</table>
 	</div>
 </div>
-<div class="tb-panel" style="left: 60%;top:15%;" data-panel-name="Oxygen">
+<div class="tb-panel" style="left: 62%;top:15%;" data-panel-name="Oxygen">
 	<div class="tb-panel-btn">
 		Oxygen
 		<div class="status"></div>

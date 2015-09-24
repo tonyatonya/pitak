@@ -18,17 +18,11 @@
 	<div class="left">
 		<?php include('inc_toptab.php'); ?>
 		<div class="middle floorplan building">
-			<div class="floorplan-child active">
-				<?php include('inc_manifold.php'); ?>
-			</div>
-			<div class="floorplan-child">
-				<?php include('inc_equipment.php'); ?>
-			</div>
-			<div class="floorplan-child"><?php include('inc_prehospital.php'); ?></div>
-			<div class="floorplan-child"><?php include('inc_iems.php'); ?></div>
-			<div class="floorplan-child">
-				<?php include('inc_er.php'); ?>
-			</div>
+			<div class="floorplan-child active"><?php include('inc_manifold.php'); ?></div>
+			<div class="floorplan-child"><?php include('inc_equipment.php'); ?></div>
+			<div class="floorplan-child expand"><?php include('inc_prehospital.php'); ?></div>
+			<div class="floorplan-child expand"><?php include('inc_iems.php'); ?></div>
+			<div class="floorplan-child"><?php include('inc_er.php'); ?></div>
 			<div class="floorplan-child"><?php include('inc_or.php'); ?></div>
 			<div class="floorplan-child"><?php include('inc_icu.php'); ?></div>
 			<div class="floorplan-child"><?php include('inc_general.php'); ?></div>
