@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" class="login">
+<head>
+<title>IMS SYSTEM Activation Account</title>
+<?php include('inc_head.php'); ?>
+</head>
+<body style="background:none;" class="registor">
 <header>
 	<div class="container-fluid">
 		<div class="row">
@@ -6,8 +13,6 @@
 					<table >
 						<tr>
 							<td><img src="images/companylogo.png" alt="companylogo" width="114" height="40" /></td>
-							<td class="user"><span>User :</span> Administrator</td>
-							<td class="button"><button><span class="icon icon-switch"></span></button></td>
 						</tr>
 					</table>
 				</div>
@@ -20,7 +25,7 @@
 					}elseif($zone == 'ims'){
 						$system_logo = 'systemlogo-iems';
 					}else{
-						$system_logo = 'systemlogo';
+						$system_logo = 'systemlogo-ims';
 					}
 				?>
 				<img src="images/<?php echo $system_logo; ?>.png" alt="systemlogo" width="227" height="50" />
@@ -34,3 +39,17 @@
 		</div>
 	</div>
 </header>
+	<div class="container" style="margin-top: 80px;">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Activation Complete</h2>
+			</div>
+			<div class="col-xs-6 col-xs-offset-3">
+				<p style="text-align: center; color: white;">
+					Thank you for activation your account
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

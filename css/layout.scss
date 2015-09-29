@@ -1526,8 +1526,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c314a', end
 				}
 				td{
 					text-align: center;
-					padding-top: 15px;
-					padding-bottom: 15px;
+					padding-top: 10px;
+					padding-bottom: 10px;
 					input[type="text"],input[type="password"]{
 						background-color: #cccccc;
 						font-size: 12px;
@@ -1694,6 +1694,61 @@ button{
 						}
 					}
 				}
+			}
+		}
+	}
+}
+.registor{
+	h2{
+		text-align: center;
+		margin-top: 80px;
+		margin-bottom: 30px;
+		color: white;
+	}
+	.form{
+		margin-top: 30px;
+		table{
+			width: 100%;
+			tr{
+				th{
+					font-style: italic;
+					font-weight: bold;
+					font-size: 20px;
+					color: $lightblue;
+					text-align: center;
+				}
+				td{
+					text-align: center;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					input[type="text"],input[type="password"]{
+						background-color: #cccccc;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		button{
+			background:none;
+			border:none;
+			padding: 5px 10px;
+			border-radius: 5px;
+			background-color: $lightblue;
+			min-width: 80px;
+			&.register{
+				background-color: #72d040;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			&.cancel{
+				background-color: red;
+				color: white;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			&:hover{
+				background-color: $lightblue;
+				color: black;
 			}
 		}
 	}

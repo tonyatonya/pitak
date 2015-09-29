@@ -1,4 +1,4 @@
-<div class="right-tab" data-menu-name="menuamb" style="display: none;">
+<div class="right-tab" data-menu-name="menuamb">
 	<ul>
 		<?php for($i=1;$i<5;$i++){ ?>
 		<li data-building="Building <?php echo($i); ?>">

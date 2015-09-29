@@ -1674,8 +1674,8 @@ header .corpname {
 
 .login-panel .form table tr td {
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .login-panel .form table tr td input[type="text"], .login-panel .form table tr td input[type="password"] {
@@ -1871,4 +1871,65 @@ button {
 
 .amb-report .report-tb tr td table.pa-option {
   width: 100%;
+}
+
+.registor h2 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.registor .form {
+  margin-top: 30px;
+}
+
+.registor .form table {
+  width: 100%;
+}
+
+.registor .form table tr th {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  color: #6cc0f4;
+  text-align: center;
+}
+
+.registor .form table tr td {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.registor .form table tr td input[type="text"], .registor .form table tr td input[type="password"] {
+  background-color: #cccccc;
+  font-size: 12px;
+}
+
+.registor .form button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #6cc0f4;
+  min-width: 80px;
+}
+
+.registor .form button.register {
+  background-color: #72d040;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.registor .form button.cancel {
+  background-color: red;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.registor .form button:hover {
+  background-color: #6cc0f4;
+  color: black;
 }

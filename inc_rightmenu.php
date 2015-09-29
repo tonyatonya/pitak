@@ -2,7 +2,7 @@
 	<ul>
 		<?php for($i=1;$i<5;$i++){ ?>
 		<li data-building="Building <?php echo($i); ?>">
-			<a href="building.php">
+			<a href="imgs.php">
 				<div class="top-bg">
 					<img src="images/rightmenutopbg.png" alt="rightmenutopbg">
 				</div>

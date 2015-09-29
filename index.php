@@ -3,51 +3,87 @@
 <head>
 <title>IMG SYSTEM</title>
 <?php include('inc_head.php'); ?>
+<style>
+	ul{
+		margin: 0;
+		padding: 0;
+		margin-top: 80px;
+		list-style: none;
+	}
+	ul li{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	ul li a{
+		cursor: pointer;
+		width: 100%;
+		display: block;
+		-moz-transition: all 0.1s ease-in;
+		-webkit-transition: all 0.1s ease-in;
+		-o-transition: all 0.1s ease-in;
+		transition: all 0.1s ease-in;
+	}
+	ul li a:hover{
+		opacity: 0.5;
+		-moz-transition: all 0.1s ease-in;
+		-webkit-transition: all 0.1s ease-in;
+		-o-transition: all 0.1s ease-in;
+		transition: all 0.1s ease-in;
+	}
+</style>
 </head>
 <body style="background:none;">
-	<div class="login-wrapper">
-		<span>
-			<div class="login-panel">
-				<div class="form">
-					<table>
+<header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-4 memberzone">
+				<div class="holdcenter" style="display: inline; float:left">
+					<table >
 						<tr>
-							<th>Sign In For Demonstration</th>
-						</tr>
-						<tr>
-							<td>
-								<div class="input-group">
-							      <div class="input-group-addon"><span class="icon icon-user"></span></div>
-							      <input type="text" class="form-control" id="exampleInputAmount" placeholder="email">
-							    </div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="input-group">
-							      <div class="input-group-addon"><span class="icon icon-mobile"></span></div>
-							      <input type="text" class="form-control" id="exampleInputAmount" placeholder="mobile number">
-							    </div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="input-group">
-							      <div class="input-group-addon"><span class="icon icon-key"></span></div>
-							      <input type="password" class="form-control" id="exampleInputAmount" placeholder="password">
-							    </div>
-							</td>
-						</tr>
-						<tr>
-							<td><button><img src="images/loginbtn.png" alt="loginbtn" width="280" height="40"></button></td>
+							<td><img src="images/companylogo.png" alt="companylogo" width="114" height="40" /></td>
 						</tr>
 					</table>
 				</div>
-				<img src="images/login-panel.png" alt="login-panel" width="347" height="386">
-		</div>
-			<div class="login-img">
-				<img src="images/loginimg.png" alt="loginimg" width="324" height="251">
+				<img src="images/leftheader.png" alt="leftheader"  class="trail" />
+				</div>
+			<div class="col-xs-4 systemname">
+				<?php
+					if($zone == 'img'){ 
+						$system_logo = 'systemlogo';
+					}elseif($zone == 'ims'){
+						$system_logo = 'systemlogo-iems';
+					}else{
+						$system_logo = 'systemlogo-ims';
+					}
+				?>
+				<img src="images/<?php echo $system_logo; ?>.png" alt="systemlogo" width="227" height="50" />
 			</div>
-		</span>
+			<div class="col-xs-4 corpname">
+				<div class="holdcenter" style="display: inline; float:right">
+					<?php echo $system_logo; ?>
+				</div>
+				<img src="images/rightheader.png" alt="rightheader" class="trail"/>
+			</div>
+		</div>
 	</div>
+</header>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2" style="text-align: center;">
+			<ul>
+				<li>
+					<a href="signin.php">
+						<img src="images/iemsbanner.png" alt="iemsbanner" width="761" height="256">
+					</a>
+				</li>
+				<li>
+					<a href="signin.php">
+						<img src="images/imgsbanner.png" alt="imgsbanner" width="761" height="256">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 </body>
 </html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>IMG SYSTEM</title>
+<title>IMGS SYSTEM</title>
 <?php include('inc_head.php'); ?>
 </head>
 <body>
-<?php 
+<?php
+	$zone = 'img';
 	//building name
 	$bname = 'Building 1';
 ?>
@@ -13,15 +14,12 @@
 	<?php include('inc_header.php'); ?>
 	<div class="right">
 		<?php include('inc_rightmenu.php'); ?>
-		<?php include('inc_rightmenu-amb.php'); ?>
 	</div>
 	<div class="left">
 		<?php include('inc_toptab.php'); ?>
 		<div class="middle floorplan building">
 			<div class="floorplan-child active"><?php include('inc_manifold.php'); ?></div>
 			<div class="floorplan-child"><?php include('inc_equipment.php'); ?></div>
-			<div class="floorplan-child expand"><?php include('inc_prehospital.php'); ?></div>
-			<div class="floorplan-child expand"><?php include('inc_iems.php'); ?></div>
 			<div class="floorplan-child"><?php include('inc_er.php'); ?></div>
 			<div class="floorplan-child"><?php include('inc_or.php'); ?></div>
 			<div class="floorplan-child"><?php include('inc_icu.php'); ?></div>
