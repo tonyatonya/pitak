@@ -123,12 +123,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001d45', end
 	padding: 0;
 }
 html{
-	@include mainbg;
+	height: 100%;
+	//@include mainbg;
 }
 body{
-	width: 100%;
-	height: 100%;
 	font-family: Arial;
+	width: 100%;
+	//height: 100%;
+	min-height: 100%;
+	@include mainbg;
 }
 .fixarea{
 	position: fixed;
