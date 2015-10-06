@@ -4,11 +4,6 @@
 <title>IMG SYSTEM</title>
 <?php include('inc_head.php'); ?>
 <style>
-	.clear{
-		width: 100%;
-		display: block;
-		clear: both;
-	}
 	ul{
 		margin: 0;
 		padding: 0;
@@ -30,24 +25,6 @@
 	}
 	ul li a:hover{
 		opacity: 0.5;
-		-moz-transition: all 0.1s ease-in;
-		-webkit-transition: all 0.1s ease-in;
-		-o-transition: all 0.1s ease-in;
-		transition: all 0.1s ease-in;
-	}
-	.systembanner{
-		margin-top: 30px;	
-	}
-	.systembanner img{
-		width: 100%;
-		height: auto;
-		-moz-transition: all 0.1s ease-in;
-		-webkit-transition: all 0.1s ease-in;
-		-o-transition: all 0.1s ease-in;
-		transition: all 0.1s ease-in;
-	}
-	.systembanner a:hover img{
-		opacity: 0.6;
 		-moz-transition: all 0.1s ease-in;
 		-webkit-transition: all 0.1s ease-in;
 		-o-transition: all 0.1s ease-in;
@@ -91,20 +68,7 @@
 	</div>
 </header>
 <div class="container">
-	<div class="clear" style="margin-top: 20%;"></div>
 	<div class="row">
-		<div class="col-xs-4 col-xs-offset-2 systembanner">
-			<a href="signin.php">
-				<img src="images/systembanner/IEMS-Banner2.jpg" alt="IEMS-Banner2">
-			</a>
-		</div>
-		<div class="col-xs-4 systembanner">
-			<a href="signin.php">
-				<img src="images/systembanner/IMGS-Banner2.jpg" alt="IMGS-Banner2">
-			</a>
-		</div>
-		
-		<!--
 		<div class="col-sm-8 col-sm-offset-2" style="text-align: center;">
 			<ul>
 				<li>
@@ -119,7 +83,6 @@
 				</li>
 			</ul>
 		</div>
-		-->
 	</div>
 </div>
 </body>

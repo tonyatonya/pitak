@@ -81,6 +81,7 @@
 							    </div>
 							</td>
 						</tr>
+						<!--
 						<tr>
 							<td>
 								<div class="input-group">
@@ -105,6 +106,7 @@
 							    </div>
 							</td>
 						</tr>
+						-->
 						<tr>
 							<td><button class="register">Register</button> <button class="cancel">Cancel</button></td>
 						</tr>

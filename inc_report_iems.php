@@ -7,7 +7,7 @@
 	<div class="report-frame">
 		<div class="report-scroll">
 			<div class="report-title">
-				<h1>Equipment Record List</h1>
+				<h1>บันทึกการปฎิบัติการงานบริการการแพทย์ฉุกเฉินระดับสูง</h1>
 			</div>
 			<div class="report-body">
 				<div class="report-ref">
