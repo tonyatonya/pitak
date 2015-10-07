@@ -22,7 +22,7 @@
 		</table>
 	</div>
 </div>
-<div class="tb-panel" style="left: 62%;top:15%;" data-panel-name="Oxygen">
+<div class="tb-panel" style="left: 15%;top:15%;" data-panel-name="Oxygen">
 	<div class="tb-panel-btn">
 		Oxygen
 		<div class="status"></div>
@@ -67,4 +67,18 @@
 			</tr>
 		</table>
 	</div>
+</div>
+<div class="tb-panel" style="left: 62%;top:15%; width:220px;" data-panel-name="Actual-Oxygen-Gas-Consumption">
+	<div class="tb-panel-btn">
+		Actual Oxygen Gas Consumption
+		<div class="status" style="right:10px;"></div>
+	</div>
+	
+</div>
+<div class="tb-panel" style="left: 70%;top:60%; width:250px;" data-panel-name="Actual-Oxygen-Gas-Consumption">
+	<div class="tb-panel-btn">
+		Actual Nitrous Oxide Gas Consumption
+		<div class="status" style="right:10px;"></div>
+	</div>
+	
 </div>

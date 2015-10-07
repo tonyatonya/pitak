@@ -16,7 +16,7 @@
 					<ul>
 						<li>Refill Date</li>
 						<li>23-Jul-16   12:05 PM</li>
-						<li>Volume  23,000 M3</li>
+						<li>Volume  23,000 M<sup>3</sup></li>
 					</ul>
 				</div>
 			</div>
@@ -34,7 +34,7 @@
 					<ul>
 						<li>Refill Date</li>
 						<li>23-Jul-16   12:05 PM</li>
-						<li>Volume  23,000 M3</li>
+						<li>Volume  23,000 M<sup>3</sup></li>
 					</ul>
 				</div>
 			</div>
