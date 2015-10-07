@@ -6,7 +6,7 @@
 				<div class="amount">60</div>
 				<div class="graph-frame">
 					<div class="scale">
-						<div class="unit">PSI</div>
+						<div class="unit">&deg;C </div>
 						<div class="scale-grid"><span>200</span></div>
 						<div class="scale-grid"><span>150</span></div>
 						<div class="scale-grid"><span>50</span></div>
@@ -24,7 +24,7 @@
 				<div class="bottom-name">Pump A</div>
 			</div>
 			<div class="graph-body temp">
-				<div class="amount">60</div>
+				<div class="amount">&deg;C </div>
 				<div class="graph-frame">
 					<div class="scale">
 						<div class="scale-grid"><span></span></div>
@@ -90,7 +90,7 @@
 				<div class="amount">60</div>
 				<div class="graph-frame">
 					<div class="scale">
-						<div class="unit">PSI</div>
+						<div class="unit">&deg;C </div>
 						<div class="scale-grid"><span>200</span></div>
 						<div class="scale-grid"><span>150</span></div>
 						<div class="scale-grid"><span>50</span></div>
@@ -174,7 +174,7 @@
 				<div class="amount">60</div>
 				<div class="graph-frame">
 					<div class="scale">
-						<div class="unit">PSI</div>
+						<div class="unit">&deg;C </div>
 						<div class="scale-grid"><span>200</span></div>
 						<div class="scale-grid"><span>150</span></div>
 						<div class="scale-grid"><span>50</span></div>
@@ -238,7 +238,7 @@
 				<div class="amount">60</div>
 				<div class="graph-frame">
 					<div class="scale">
-						<div class="unit">PSI</div>
+						<div class="unit">&deg;C </div>
 						<div class="scale-grid"><span>200</span></div>
 						<div class="scale-grid"><span>150</span></div>
 						<div class="scale-grid"><span>50</span></div>
